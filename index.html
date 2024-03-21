@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>TASK APP</title>
+  </head>
+  <body>
+
+                <header>
+                                <h1>Task App</h1>
+                </header>
+
+    <main>
+      <form>
+        <div class="field">
+          <label for="text">Tarea:</label>
+          <input type="text" name="text" id="text" required maxlength="50" />
+      </div>
+
+      <div class="field">
+        <label for="priority">Importante:</label>
+        <input type="checkbox" id="priority" name="priority" />
+      </div>
+
+      <div class="field">
+        <button class="cleanTasks" type="button">Limpiar tareas</button>
+        <button>Crear tarea</button>
+      </div>
+      </form>
+
+      <p class="noTasks hidden" >No hay tareas creadas</p>
+
+      <ul></ul>
+    </main>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

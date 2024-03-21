@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: aliceblue;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 30%);
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+main {
+    background-color: white;
+    min-width: 600px;
+    max-width: 800px;
+    height: 600px;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 30%);
+    display: flex;
+    flex-direction: column;
+}
+
+/* FORM */
+
+form {
+    width: max-content;
+    margin: 0 auto;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+input {
+    padding: 0.5rem;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.field input :not([type="checkbox"]) {
+    flex-grow: 1;
+}
+
+button {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    font-weight: 900;
+    background-color: rgb(210, 233, 234);
+}
+
+.cleanTasks {
+    background-color: rgb(238, 31, 31);
+    color: white;
+}
+
+.noTasks {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+/* TASK */
+
+ul {
+    padding: 2rem;
+    list-style: none;
+    overflow: auto;
+    flex-grow: 1;
+}
+
+li {
+    box-shadow: 0px 0px 15px rgba(139, 136, 136, 0.3);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+li:hover {
+    background-color: rgb(210, 223, 234);
+}
+
+.taskRow {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.taskDate {
+    font-style: italic;
+}
+
+.important .taskText {
+    font-weight: bold;
+}
+
+.done .taskText {
+    text-decoration: line-through;
+}
